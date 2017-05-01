@@ -13,7 +13,7 @@ notifications:
     on_build_status_changed: false
 
 before_build:
-  - cmd: ECHO this is batch  %APPVEYOR_PULL_REQUEST_NUMBER%
+  - cmd: ECHO this is batch  %APPVEYOR_JOB_ID%
 
 #install:
 # If there's a newer build queued for the same PR, cancel this one
