@@ -14,7 +14,7 @@ notifications:
 
 before_build:
   - cmd: ECHO this is batch  %APPVEYOR_ACCOUNT_NAME%
-         ECHO this is batch  %APPVEYOR_PROJECT_NAME%
+  - cmd: ECHO this is batch  %APPVEYOR_PROJECT_NAME%
 
 #install:
 # If there's a newer build queued for the same PR, cancel this one
