@@ -13,7 +13,8 @@ notifications:
     on_build_status_changed: false
 
 before_build:
-  - cmd: ECHO this is batch  %APPVEYOR_JOB_ID%
+  - cmd: ECHO this is batch  %APPVEYOR_ACCOUNT_NAME%
+         ECHO this is batch  %APPVEYOR_PROJECT_NAME%
 
 #install:
 # If there's a newer build queued for the same PR, cancel this one
