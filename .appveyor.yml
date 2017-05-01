@@ -17,7 +17,9 @@ before_build:
   - cmd: ECHO this is batch  %APPVEYOR_PROJECT_NAME%
 
 build:
-  - ps: Exit-AppVeyorBuild
+  - cmd: appveyor exit
+  - PS: Exit-AppVeyorBuild
+  
 #install:
 # If there's a newer build queued for the same PR, cancel this one
 #  - ps: if ($env:APPVEYOR_PULL_REQUEST_NUMBER -and $env:APPVEYOR_BUILD_NUMBER -ne ((Invoke-RestMethod `
