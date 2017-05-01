@@ -17,7 +17,7 @@ before_build:
   - cmd: ECHO this is batch  %APPVEYOR_PROJECT_NAME%
 
 build:
-  - cmd: appveyor exit
+  - cmd: disabled
   - PS: Exit-AppVeyorBuild
   
 #install:
