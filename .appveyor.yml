@@ -1,5 +1,4 @@
-os: 
-    - Unstable
+os: unstable
 
 environment:
   matrix:
