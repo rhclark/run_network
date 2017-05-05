@@ -20,9 +20,9 @@ before_build:
   - cmd: ECHO this is batch  %APPVEYOR_PROJECT_NAME%
   - ls -l
 
-build:
-  - cmd: disabled
-  - PS: Exit-AppVeyorBuild
+#build:
+#  - cmd: disabled
+#  - PS: Exit-AppVeyorBuild
   
 #install:
 # If there's a newer build queued for the same PR, cancel this one
