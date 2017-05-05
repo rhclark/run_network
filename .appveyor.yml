@@ -24,6 +24,12 @@ before_build:
 #  - ls -l
 #  - PS: Exit-AppVeyorBuild
   
+install:
+  - appveyor DownloadFile https://cygwin.com/setup-x86.exe -FileName C:\cygwin\setup-x86.exe
+  - C:\cygwin\setup-x86.exe -qnNdO -R C:/cygwin -s http://cygwin.mirror.constant.com -l C:/cygwin/var/cache/setup
+
+  
+  
 #install:
 # If there's a newer build queued for the same PR, cancel this one
 #  - ps: if ($env:APPVEYOR_PULL_REQUEST_NUMBER -and $env:APPVEYOR_BUILD_NUMBER -ne ((Invoke-RestMethod `
