@@ -20,6 +20,7 @@ before_build:
   - ls -l
   - uname -a
 
+platform: x86
 #build:
 #  - ls -l
 #  - PS: Exit-AppVeyorBuild
