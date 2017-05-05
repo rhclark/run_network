@@ -1,5 +1,5 @@
-#os: 
-#    - Unstable
+os: 
+    - Unstable
 
 environment:
   matrix:
