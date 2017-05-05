@@ -1,5 +1,6 @@
+os: -unstable
+
 environment:
-  os: -unstable
   matrix:
     - JULIAVERSION: "WOWOWEWO"
 branches:
