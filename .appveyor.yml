@@ -19,6 +19,7 @@ before_build:
   - cmd: ECHO this is batch  %APPVEYOR_ACCOUNT_NAME%
   - cmd: ECHO this is batch  %APPVEYOR_PROJECT_NAME%
   - ls -l
+  - uname -a
 
 #build:
 #  - ls -l
